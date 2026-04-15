@@ -1,0 +1,32 @@
+
+import java.lang.Math;
+import java.util.Scanner;
+public class Operaciones2 {
+    public static void main(String[] args){
+        int n1,n2,suma;
+        double raiz_cuadrado;
+        double cubo;
+        
+        Scanner teclado=new Scanner(System.in);
+        
+        System.out.println("Programa que suma 2 números y los eleva al cuadrado");
+        
+        System.out.println("Escribe el primer número a sumar");
+        n1=teclado.nextInt();
+        
+        System.out.println("Escribe el segundo número a sumar");
+        n2=teclado.nextInt();
+        
+        //sumamos los números
+        suma=n1+n2;
+        System.out.println("El resultado de la suma es " + suma);
+        
+        //obtenemos la raiz cuadrada de la suma
+        raiz_cuadrado=Math.sqrt(suma);
+        System.out.println("La suma al cuadrado es " + raiz_cuadrado);
+        
+        //Elevamos la suma al cubo
+        cubo=Math.pow(suma,3);
+        System.out.println("La suma al cubo es " + cubo);
+    }
+}
