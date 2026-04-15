@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class EjemploFor {
+    public static void main(String []args){
+        
+        int contador=0;
+        String mensaje="Debo estudiar";
+        for(contador=150;contador<=500;contador+=10){
+            System.out.println(mensaje + contador);
+        }
+    }
+}
